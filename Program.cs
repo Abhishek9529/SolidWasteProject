@@ -1,3 +1,4 @@
+using IMP.Infrastructure.Security;
 using IMP.Application.Interfaces;
 using IMP.Application.Services;
 using IMP.Infrastructure.Repositories;
@@ -9,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Register the Service and Repository
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
 
 // Add services to the container.
 
