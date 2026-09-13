@@ -1,7 +1,14 @@
-using InterviewManagementPortal.Data;
+using IMP.Application.Interfaces;
+using IMP.Application.Services;
+using IMP.Infrastructure.Repositories;
+using IMP.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Register the Service and Repository
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Add services to the container.
 

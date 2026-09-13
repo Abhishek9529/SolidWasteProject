@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="InterviewManagementPortal.csproj" />
+  <Project Path="../IMP.Application/IMP.Application.csproj" Id="3673e8d4-f895-49da-b1aa-d10098501e16" />
+  <Project Path="../IMP.Domain/IMP.Domain.csproj" Id="96db94fd-ee5c-4027-b067-97fca501e302" />
+  <Project Path="../IMP.Infrastructure/IMP.Infrastructure.csproj" Id="d3ae595c-a2a5-46eb-9874-7a59f1c70b9a" />
+  <Project Path="IMP.Api.csproj" />
 </Solution>

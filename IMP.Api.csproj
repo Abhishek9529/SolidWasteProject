@@ -20,4 +20,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IMP.Application\IMP.Application.csproj" />
+    <ProjectReference Include="..\IMP.Infrastructure\IMP.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
